@@ -1,0 +1,133 @@
+/* Base styles */
+body {
+  background-color: #ffe6eb;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 350px;
+}
+
+/* Form inputs - specifically targeting all input types */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border: 2px solid #ffb6c1;
+  border-radius: 0.5rem;
+  background-color: #ffe6eb;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+/* First name and last name container */
+.input-group {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.input-group input {
+  width: 50%;
+}
+
+/* Labels */
+label {
+  color: #ff6699;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+/* Buttons - specifically targeting both button elements and input[type="submit"] */
+button,
+input[type="submit"],
+.btn,
+input[value="Login"],
+input[value="Sign Up"] {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #ff6699;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 1rem 0;
+  font-weight: bold;
+}
+
+button:hover,
+input[type="submit"]:hover,
+.btn:hover {
+  background-color: #ff3366;
+}
+
+/* Links */
+a {
+  color: #ff6699;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Form title */
+h2 {
+  margin: 0 0 1.5rem;
+  text-align: center;
+  color: #333;
+}
+
+/* Form paragraphs */
+p {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* Homepage specific */
+h1 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+/* Logout link specific styling */
+a[href="logout.php"] {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #ff6699;
+  color: white;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  margin-top: 1rem;
+  margin-left:120px;
+}
+
+a[href="logout.php"]:hover {
+  background-color: #ff3366;
+  text-decoration: none;
+}
+
+.success-message {
+  background-color: #d4edda; 
+  color: #155724; 
+  padding: 10px;
+  border: 1px solid #c3e6cb;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: bold;
+}
